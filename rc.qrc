@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>rc/Circle.png</file>
+        <file>rc/Curve.png</file>
+        <file>rc/Ellipse.png</file>
+        <file>rc/Line.png</file>
+        <file>rc/Octagon.png</file>
+        <file>rc/Palette.png</file>
+        <file>rc/Rectangle.png</file>
+        <file>rc/Rotate.png</file>
+        <file>rc/Translate.png</file>
+        <file>rc/Trash.png</file>
+        <file>rc/Triangle.png</file>
+        <file>rc/Undo.png</file>
+        <file>rc/ZoomIn.png</file>
+        <file>rc/ZoomOut.png</file>
+        <file>rc/Save.png</file>
+        <file>rc/Open.png</file>
+        <file>rc/Clip.png</file>
+        <file>rc/AddPoint.png</file>
+        <file>rc/DeletePoint.png</file>
+        <file>rc/Help.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Paint</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>11</y>
+      <width>778</width>
+      <height>487</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_open"/>
+   <addaction name="action_save"/>
+   <addaction name="separator"/>
+   <addaction name="action_line"/>
+   <addaction name="action_triangle"/>
+   <addaction name="action_rectangle"/>
+   <addaction name="action_circle"/>
+   <addaction name="action_ellipse"/>
+   <addaction name="action_polygon"/>
+   <addaction name="action_curve"/>
+   <addaction name="separator"/>
+   <addaction name="action_translate"/>
+   <addaction name="action_rotate"/>
+   <addaction name="action_clip"/>
+   <addaction name="action_zoomin"/>
+   <addaction name="action_zoomout"/>
+   <addaction name="separator"/>
+   <addaction name="action_addpoint"/>
+   <addaction name="action_deletepoint"/>
+   <addaction name="action_palette"/>
+   <addaction name="action_trash"/>
+   <addaction name="action_help"/>
+  </widget>
+  <action name="action_line">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Line.png</normaloff>:/rc/Line.png</iconset>
+   </property>
+   <property name="text">
+    <string>直线</string>
+   </property>
+  </action>
+  <action name="action_triangle">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Triangle.png</normaloff>:/rc/Triangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>三角形</string>
+   </property>
+  </action>
+  <action name="action_rectangle">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Rectangle.png</normaloff>:/rc/Rectangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>矩形</string>
+   </property>
+  </action>
+  <action name="action_circle">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Circle.png</normaloff>:/rc/Circle.png</iconset>
+   </property>
+   <property name="text">
+    <string>圆</string>
+   </property>
+  </action>
+  <action name="action_ellipse">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Ellipse.png</normaloff>:/rc/Ellipse.png</iconset>
+   </property>
+   <property name="text">
+    <string>椭圆</string>
+   </property>
+  </action>
+  <action name="action_polygon">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Octagon.png</normaloff>:/rc/Octagon.png</iconset>
+   </property>
+   <property name="text">
+    <string>多边形</string>
+   </property>
+  </action>
+  <action name="action_palette">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Palette.png</normaloff>:/rc/Palette.png</iconset>
+   </property>
+   <property name="text">
+    <string>调色板</string>
+   </property>
+  </action>
+  <action name="action_translate">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Translate.png</normaloff>:/rc/Translate.png</iconset>
+   </property>
+   <property name="text">
+    <string>移动</string>
+   </property>
+  </action>
+  <action name="action_trash">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Trash.png</normaloff>:/rc/Trash.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="action_rotate">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Rotate.png</normaloff>:/rc/Rotate.png</iconset>
+   </property>
+   <property name="text">
+    <string>旋转</string>
+   </property>
+  </action>
+  <action name="action_zoomin">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/ZoomIn.png</normaloff>:/rc/ZoomIn.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="action_zoomout">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/ZoomOut.png</normaloff>:/rc/ZoomOut.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Save.png</normaloff>:/rc/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Open.png</normaloff>:/rc/Open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_clip">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Clip.png</normaloff>:/rc/Clip.png</iconset>
+   </property>
+   <property name="text">
+    <string>裁剪</string>
+   </property>
+  </action>
+  <action name="action_curve">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Curve.png</normaloff>:/rc/Curve.png</iconset>
+   </property>
+   <property name="text">
+    <string>曲线</string>
+   </property>
+  </action>
+  <action name="action_addpoint">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/AddPoint.png</normaloff>:/rc/AddPoint.png</iconset>
+   </property>
+   <property name="text">
+    <string>加粗</string>
+   </property>
+  </action>
+  <action name="action_deletepoint">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/DeletePoint.png</normaloff>:/rc/DeletePoint.png</iconset>
+   </property>
+   <property name="text">
+    <string>减细</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/Help.png</normaloff>:/rc/Help.png</iconset>
+   </property>
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
